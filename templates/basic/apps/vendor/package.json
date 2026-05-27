@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@mercurjs/vendor": "2.1.2",
-    "@acme/api": "*"
+    "@acme/api": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^24.10.1"
