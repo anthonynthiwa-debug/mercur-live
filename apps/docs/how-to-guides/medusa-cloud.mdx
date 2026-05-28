@@ -10,10 +10,9 @@ description: "Install and deploy Mercur on Medusa Cloud."
 Head to the [Medusa Cloud signup page](https://cloud.medusajs.com/signup) to get started. After registration is complete and your account is active, authorize the Medusa Cloud GitHub app in your organization or personal account.
 
 <Info>
-  Medusa Cloud only deploys the **backend**. The admin panel, vendor panel,
-  and storefront must be deployed separately (for example, on Vercel,
-  Netlify, or your own infrastructure) and pointed at the deployed backend
-  URL.
+  Medusa Cloud only deploys the **backend**. The admin panel and vendor panel
+  must be deployed separately (for example, on Vercel, Netlify, or your own
+  infrastructure) and pointed at the deployed backend URL.
 </Info>
 
 ## Prerequisites
@@ -34,7 +33,7 @@ Head to the [Medusa Cloud signup page](https://cloud.medusajs.com/signup) to get
    - **Medusa root directory**: `/packages/api`.
    - **Initial user** — the first admin email and password.
 
-   Leave **Storefront root directory** empty — the Mercur basic template doesn't ship a storefront, so deploy your storefront separately.
+   Leave **Storefront root directory** empty — the Mercur basic template doesn't ship a storefront.
    ![Configure project — name, region, Medusa root directory](/images/v2/cloud_3.png)
 4. Scroll down to **Environment variables** and add the **Backend Environment Variables** below. Medusa Cloud provisions the database, Redis, and file storage automatically, so you don't need to set those.
    ![Environment variables](/images/v2/cloud_4.png)
@@ -81,4 +80,4 @@ You can change these variables later from the project's environment settings, an
 
 ## After deployment
 
-Once the build succeeds, the backend is available at `https://<your-subdomain>.medusajs.app`. Point your separately-deployed admin panel, vendor panel, and storefront at this URL via their `VITE_MEDUSA_BACKEND_URL` (or equivalent) build-time variable, and make sure that URL is included in the backend's `ADMIN_CORS`, `VENDOR_CORS`, `STORE_CORS`, and `AUTH_CORS` environment variables.
+Once the build succeeds, the backend is available at `https://<your-subdomain>.medusajs.app`. Point your separately-deployed admin and vendor panels at this URL via their `VITE_MEDUSA_BACKEND_URL` (or equivalent) build-time variable, and make sure that URL is included in the backend's `ADMIN_CORS`, `VENDOR_CORS`, `STORE_CORS`, and `AUTH_CORS` environment variables.
