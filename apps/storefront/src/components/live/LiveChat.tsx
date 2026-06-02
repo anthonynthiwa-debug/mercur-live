@@ -9,7 +9,7 @@ interface LiveChatProps {
   channelName: string
 }
 
-export default function LiveChat({ streamId, rtmClient, channelName }: LiveChatProps) {
+export default function LiveChat({ streamId: _, rtmClient, channelName }: LiveChatProps) {
   const [messages, setMessages] = useState<any[]>([])
   const [input, setInput] = useState('')
   const scrollRef = useRef<HTMLDivElement>(null)
@@ -70,9 +70,17 @@ export default function LiveChat({ streamId, rtmClient, channelName }: LiveChatP
           value={input}
           onChange={e => setInput(e.target.value)}
           placeholder="Say something..."
-          className="flex-1 bg-white/20 rounded px-2 py-1 outline-none text-sm"
+          aria-label="Chat message"
+          className="flex-1 bg-white/20 rounded px-2 py-1 outline-none text-sm focus:ring-1 focus:ring-blue-500"
         />
-        <button type="submit" className="bg-blue-600 px-3 py-1 rounded text-sm">Send</button>
+        <button
+          type="submit"
+          disabled={!input.trim() || !rtmClient}
+          aria-label="Send message"
+          className="bg-blue-600 px-3 py-1 rounded text-sm font-medium hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed focus:ring-2 focus:ring-blue-400 outline-none"
+        >
+          Send
+        </button>
       </form>
     </div>
   )

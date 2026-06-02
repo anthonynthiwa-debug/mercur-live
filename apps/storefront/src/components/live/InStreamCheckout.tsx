@@ -50,7 +50,13 @@ export default function InStreamCheckout({ product, onClose }: { product: any, o
       <div className="w-full max-w-md bg-white rounded-xl shadow-2xl overflow-hidden animate-scale-in">
         <div className="p-4 border-b flex justify-between items-center text-black">
           <h2 className="font-bold">Live Checkout</h2>
-          <button onClick={onClose} className="text-gray-500 hover:text-black">&times;</button>
+          <button
+            onClick={onClose}
+            aria-label="Close checkout"
+            className="text-gray-500 hover:text-black text-2xl focus:ring-2 focus:ring-blue-500 rounded outline-none"
+          >
+            &times;
+          </button>
         </div>
 
         <div className="p-6 text-black">
@@ -59,7 +65,7 @@ export default function InStreamCheckout({ product, onClose }: { product: any, o
           {step === 1 && (
             <div className="space-y-4">
                <div className="flex gap-4 items-center bg-gray-50 p-3 rounded">
-                  <img src={product.thumbnail} className="w-12 h-12 rounded object-cover" />
+                  <img src={product.thumbnail} alt={product.title} className="w-12 h-12 rounded object-cover" />
                   <div>
                       <div className="text-sm font-bold">{product.title}</div>
                       <div className="text-xs text-gray-500">${product.price}</div>
@@ -78,8 +84,16 @@ export default function InStreamCheckout({ product, onClose }: { product: any, o
           {step === 2 && (
             <div className="space-y-4">
                 <div className="text-sm font-bold">Shipping & Payment</div>
-                <input placeholder="Full Name" className="w-full border rounded p-2 text-sm" />
-                <input placeholder="Address" className="w-full border rounded p-2 text-sm" />
+                <input
+                  placeholder="Full Name"
+                  aria-label="Full Name"
+                  className="w-full border rounded p-2 text-sm focus:ring-1 focus:ring-blue-500 outline-none"
+                />
+                <input
+                  placeholder="Address"
+                  aria-label="Shipping Address"
+                  className="w-full border rounded p-2 text-sm focus:ring-1 focus:ring-blue-500 outline-none"
+                />
                 <div className="border rounded p-4 text-center text-gray-400 bg-gray-50 italic text-sm">
                     Stripe Elements Placeholder
                 </div>

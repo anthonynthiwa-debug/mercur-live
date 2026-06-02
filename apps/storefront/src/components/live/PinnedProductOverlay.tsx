@@ -18,7 +18,10 @@ export default function PinnedProductOverlay({ product, onBuyNow }: { product: a
           >
             BUY NOW
           </button>
-          <button className="bg-gray-100 p-2 rounded hover:bg-gray-200">
+          <button
+            aria-label="Add to cart"
+            className="bg-gray-100 p-2 rounded hover:bg-gray-200 transition-colors focus:ring-2 focus:ring-blue-500 outline-none"
+          >
             🛒
           </button>
         </div>
