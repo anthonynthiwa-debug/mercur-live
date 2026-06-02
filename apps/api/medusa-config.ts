@@ -35,5 +35,8 @@ module.exports = withMercur({
         disable: true
       }
     },
+    {
+        resolve: '@mercurjs/liveshopping',
+    }
   ],
 })

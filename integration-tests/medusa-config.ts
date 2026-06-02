@@ -37,6 +37,9 @@ module.exports = defineConfig({
         disable: true
       }
     },
+    {
+      resolve: '../packages/mercur-liveshopping'
+    },
     // Meilisearch block — loaded only when env vars are present (e.g. meilisearch integration tests)
     ...(process.env.MEILISEARCH_HOST ? [{
       resolve: '../packages/registry/src/meilisearch/modules/meilisearch',
