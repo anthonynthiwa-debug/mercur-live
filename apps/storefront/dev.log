@@ -1,0 +1,13 @@
+$ next dev
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 4s
+ ○ Compiling /verify-rtm ...
+ ✓ Compiled /verify-rtm in 5.4s (493 modules)
+ GET /verify-rtm 200 in 5818ms
+ ✓ Compiled in 414ms (493 modules)
+ GET /verify-rtm 200 in 179ms
+ ✓ Compiled in 21ms
+ ✓ Compiled in 263ms (217 modules)

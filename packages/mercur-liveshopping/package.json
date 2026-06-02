@@ -1,0 +1,28 @@
+{
+  "name": "@mercurjs/liveshopping",
+  "version": "1.0.0",
+  "description": "Enterprise live-shopping plugin for MercurJS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "@medusajs/framework": "^2.0.0",
+    "@mercurjs/core": "workspace:*",
+    "agora-access-token": "^2.0.4",
+    "web-push": "^3.6.7"
+  },
+  "devDependencies": {
+    "@types/web-push": "^3.6.4",
+    "typescript": "^5.0.0",
+    "vitest": "^4.1.7"
+  },
+  "peerDependencies": {
+    "@medusajs/framework": "^2.0.0"
+  }
+}
