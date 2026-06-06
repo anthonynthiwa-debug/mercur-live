@@ -1,0 +1,158 @@
+$ turbo run dev
+
+Attention:
+Turborepo now collects completely anonymous telemetry regarding usage.
+This information is used to shape the Turborepo roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://turborepo.dev/docs/telemetry
+
+• turbo 2.8.16
+• Packages in scope: @acme/admin, @acme/api, @acme/vendor, @mercurjs/admin, @mercurjs/cli, @mercurjs/client, @mercurjs/core, @mercurjs/dashboard-sdk, @mercurjs/dashboard-shared, @mercurjs/integration-tests, @mercurjs/liveshopping, @mercurjs/payout-stripe-connect, @mercurjs/registry, @mercurjs/types, @mercurjs/vendor, storefront
+• Running dev in 16 packages
+• Remote caching disabled
+@mercurjs/dashboard-sdk:build: cache miss, executing 4de5cde266aee6cb
+@mercurjs/types:build: cache miss, executing 6f40decf5e5ddb19
+@mercurjs/client:build: cache miss, executing 36701b4afceca92c
+@mercurjs/dashboard-sdk:dev: cache bypass, force executing 956da77da6b69e46
+@mercurjs/client:dev: cache bypass, force executing a83bce4244f49abb
+@mercurjs/types:dev: cache bypass, force executing 7b73346c601e59d7
+@mercurjs/dashboard-sdk:dev: $ tsup --watch
+@mercurjs/dashboard-sdk:build: $ tsup
+@mercurjs/client:dev: $ tsup --watch
+@mercurjs/client:build: $ tsup
+@mercurjs/types:build: $ tsc
+@mercurjs/types:dev: $ tsc --watch
+@mercurjs/types:dev: [2J[3J[H10:32:43 PM - Starting compilation in watch mode...
+@mercurjs/types:dev:
+@mercurjs/dashboard-sdk:build: CLI Building entry: src/index.ts
+@mercurjs/dashboard-sdk:build: CLI Using tsconfig: tsconfig.json
+@mercurjs/dashboard-sdk:build: CLI tsup v8.5.1
+@mercurjs/dashboard-sdk:build: CLI Using tsup config: /app/packages/dashboard-sdk/tsup.config.ts
+@mercurjs/dashboard-sdk:build: CLI Target: es2020
+@mercurjs/dashboard-sdk:build: CLI Cleaning output folder
+@mercurjs/dashboard-sdk:build: CJS Build start
+@mercurjs/dashboard-sdk:build: CJS dist/index.cjs 30.74 KB
+@mercurjs/dashboard-sdk:build: CJS ⚡️ Build success in 107ms
+@mercurjs/client:build: CLI Building entry: src/index.ts
+@mercurjs/client:build: CLI Using tsconfig: tsconfig.json
+@mercurjs/client:build: CLI tsup v8.5.1
+@mercurjs/client:build: CLI Using tsup config: /app/packages/client/tsup.config.ts
+@mercurjs/client:build: CLI Target: es6
+@mercurjs/client:build: CLI Cleaning output folder
+@mercurjs/client:build: ESM Build start
+@mercurjs/client:dev: CLI Building entry: src/index.ts
+@mercurjs/client:dev: CLI Using tsconfig: tsconfig.json
+@mercurjs/client:dev: CLI tsup v8.5.1
+@mercurjs/client:dev: CLI Using tsup config: /app/packages/client/tsup.config.ts
+@mercurjs/client:dev: CLI Running in watch mode
+@mercurjs/dashboard-sdk:dev: CLI Building entry: src/index.ts
+@mercurjs/dashboard-sdk:dev: CLI Using tsconfig: tsconfig.json
+@mercurjs/dashboard-sdk:dev: CLI tsup v8.5.1
+@mercurjs/dashboard-sdk:dev: CLI Using tsup config: /app/packages/dashboard-sdk/tsup.config.ts
+@mercurjs/dashboard-sdk:dev: CLI Running in watch mode
+@mercurjs/dashboard-sdk:dev: CLI Target: es2020
+@mercurjs/dashboard-sdk:dev: CLI Cleaning output folder
+@mercurjs/dashboard-sdk:dev: CJS Build start
+@mercurjs/client:dev: CLI Target: es6
+@mercurjs/client:dev: CLI Cleaning output folder
+@mercurjs/client:dev: ESM Build start
+@mercurjs/client:build: ESM dist/index.mjs 5.54 KB
+@mercurjs/client:build: ESM ⚡️ Build success in 251ms
+@mercurjs/dashboard-sdk:dev: CJS dist/index.cjs 30.74 KB
+@mercurjs/dashboard-sdk:dev: CJS ⚡️ Build success in 219ms
+@mercurjs/client:dev: ESM dist/index.mjs 5.54 KB
+@mercurjs/client:dev: ESM ⚡️ Build success in 207ms
+@mercurjs/dashboard-sdk:dev: CLI Watching for changes in "."
+@mercurjs/dashboard-sdk:dev: CLI Ignoring changes in "**/{.git,node_modules}/**" | "dist"
+@mercurjs/client:dev: CLI Watching for changes in "."
+@mercurjs/client:dev: CLI Ignoring changes in "**/{.git,node_modules}/**" | "dist"
+@mercurjs/dashboard-sdk:build: DTS Build start
+@mercurjs/client:build: DTS Build start
+@mercurjs/dashboard-sdk:dev: DTS Build start
+@mercurjs/client:dev: DTS Build start
+@mercurjs/payout-stripe-connect:dev: cache bypass, force executing 3bbaab351efc5247
+@mercurjs/payout-stripe-connect:dev: $ tsup --watch
+@mercurjs/payout-stripe-connect:dev: CLI Building entry: src/index.ts
+@mercurjs/payout-stripe-connect:dev: CLI Using tsconfig: tsconfig.json
+@mercurjs/payout-stripe-connect:dev: CLI tsup v8.5.1
+@mercurjs/payout-stripe-connect:dev: CLI Using tsup config: /app/packages/providers/payout-stripe-connect/tsup.config.ts
+@mercurjs/payout-stripe-connect:dev: CLI Running in watch mode
+@mercurjs/payout-stripe-connect:dev: CLI Target: esnext
+@mercurjs/payout-stripe-connect:dev: CLI Cleaning output folder
+@mercurjs/payout-stripe-connect:dev: ESM Build start
+@mercurjs/payout-stripe-connect:dev: ESM dist/index.js     6.18 KB
+@mercurjs/payout-stripe-connect:dev: ESM dist/index.js.map 17.74 KB
+@mercurjs/payout-stripe-connect:dev: ESM ⚡️ Build success in 525ms
+@mercurjs/payout-stripe-connect:dev: CLI Watching for changes in "."
+@mercurjs/payout-stripe-connect:dev: CLI Ignoring changes in "**/{.git,node_modules}/**" | "dist"
+@mercurjs/types:dev:
+@mercurjs/types:dev: 10:32:56 PM - Found 0 errors. Watching for file changes.
+@mercurjs/payout-stripe-connect:dev: DTS Build start
+@mercurjs/dashboard-sdk:build: DTS ⚡️ Build success in 11643ms
+@mercurjs/dashboard-sdk:build: DTS dist/index.d.cts 2.92 KB
+@mercurjs/dashboard-sdk:dev: DTS ⚡️ Build success in 10920ms
+@mercurjs/cli:dev: cache bypass, force executing 55bd8dae4784fdb6
+@mercurjs/cli:build: cache miss, executing 599fe230e3c2e7e4
+@mercurjs/cli:build: $ tsup
+@mercurjs/cli:dev: $ tsup --watch
+@mercurjs/cli:build: CLI Building entry: src/index.ts
+@mercurjs/cli:build: CLI Using tsconfig: tsconfig.json
+@mercurjs/cli:build: CLI tsup v8.5.1
+@mercurjs/cli:build: CLI Using tsup config: /app/packages/cli/tsup.config.ts
+@mercurjs/cli:build: CLI Target: esnext
+@mercurjs/cli:build: CLI Cleaning output folder
+@mercurjs/cli:build: ESM Build start
+@mercurjs/cli:dev: CLI Building entry: src/index.ts
+@mercurjs/cli:dev: CLI Using tsconfig: tsconfig.json
+@mercurjs/cli:dev: CLI tsup v8.5.1
+@mercurjs/cli:dev: CLI Using tsup config: /app/packages/cli/tsup.config.ts
+@mercurjs/cli:dev: CLI Running in watch mode
+@mercurjs/cli:dev: CLI Target: esnext
+@mercurjs/cli:dev: CLI Cleaning output folder
+@mercurjs/cli:dev: ESM Build start
+@mercurjs/cli:build: DTS Build start
+@mercurjs/client:dev: DTS ⚡️ Build success in 14089ms
+@mercurjs/cli:build: ESM dist/index.js     110.98 KB
+@mercurjs/cli:build: ESM dist/index.js.map 368.47 KB
+@mercurjs/cli:build: ESM ⚡️ Build success in 2430ms
+@mercurjs/client:build: DTS ⚡️ Build success in 14538ms
+@mercurjs/client:build: DTS dist/index.d.mts 2.84 KB
+@mercurjs/cli:dev: DTS Build start
+storefront:dev: cache bypass, force executing 1e82bcbe62993279
+storefront:dev: $ next dev
+@mercurjs/cli:dev: ESM dist/index.js     110.98 KB
+@mercurjs/cli:dev: ESM dist/index.js.map 368.47 KB
+@mercurjs/cli:dev: ESM ⚡️ Build success in 2667ms
+@mercurjs/cli:dev: CLI Watching for changes in "."
+@mercurjs/cli:dev: CLI Ignoring changes in "**/{.git,node_modules}/**" | "dist"
+storefront:dev:  ⚠ Port 3000 is in use, trying 3001 instead.
+storefront:dev:   ▲ Next.js 14.2.35
+storefront:dev:   - Local:        http://localhost:3001
+storefront:dev:
+storefront:dev:  ✓ Starting...
+storefront:dev:  ✓ Ready in 3.2s
+@mercurjs/payout-stripe-connect:dev: DTS ⚡️ Build success in 9546ms
+@mercurjs/cli:build: DTS ⚡️ Build success in 10148ms
+@mercurjs/cli:build: DTS dist/index.d.ts 12.00 KB
+@mercurjs/core:build: cache miss, executing 5faefc27601fc0dd
+@mercurjs/core:dev: cache bypass, force executing 560c0e0be18f261d
+@mercurjs/core:build: $ bun x @mercurjs/cli@2.0.2 codegen && rm -rf .medusa && tsc --declaration --outDir .medusa/server
+@mercurjs/core:dev: $ medusa plugin:develop
+@mercurjs/core:build: Resolving dependencies
+@mercurjs/cli:dev: DTS ⚡️ Build success in 9649ms
+@mercurjs/core:dev: ╔════════════════════════════════════════════════════════════════════════╗
+@mercurjs/core:dev: ║                                                                        ║
+@mercurjs/core:dev: ║   Medusa collects anonymous usage analytics                            ║
+@mercurjs/core:dev: ║   to help improve Medusa for all users.                                ║
+@mercurjs/core:dev: ║                                                                        ║
+@mercurjs/core:dev: ║   If you'd like to opt-out, you can use `medusa telemetry --disable`   ║
+@mercurjs/core:dev: ║                                                                        ║
+@mercurjs/core:dev: ║                                                                        ║
+@mercurjs/core:dev: ╚════════════════════════════════════════════════════════════════════════╝
+@mercurjs/core:dev: [32minfo[39m:    Compiling plugin source...
+@mercurjs/core:dev: [32minfo[39m:    Removing existing ".medusa/server" folder
+@mercurjs/core:dev: [32minfo[39m:    Plugin build completed successfully (17.30s)
+@mercurjs/core:dev: [32minfo[39m:    watching for file changes
+storefront:dev:  ○ Compiling /live/[id] ...
+storefront:dev:  ✓ Compiled /live/[id] in 1789ms (615 modules)
+storefront:dev:  GET /live/123 200 in 2484ms
